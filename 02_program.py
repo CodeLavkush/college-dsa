@@ -1,3 +1,9 @@
+"""
+Practical Details
+sr no. 2
+Date: 20 June 2025
+"""
+
 
 def bubble_sort(arr):
     for i in range(len(arr) - 1, 0, -1):
