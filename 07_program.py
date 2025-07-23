@@ -79,7 +79,7 @@ def main():
                     my_queue = Queue(value)
                     print("Queue created!")
                 case 2:
-                    value = int(input("Enter the element: "))
+                    value = int(input("Enter the value: "))
                     my_queue.enqueue(value)
                 case 3:
                     my_queue.dequeue()
