@@ -64,8 +64,8 @@ def main():
     while True:
         try:
             print("MAIN MENU".center(24, "*"))
-            print("1.Create a list")
-            print("2.Add element to List")
+            print("1.Create a LL")
+            print("2.Add node to LL")
             print("3.Search")
             print("4.Display")
             print("5.Reverse")
@@ -73,20 +73,20 @@ def main():
             choice = int(input("Enter your choice(1-6): "))
             match choice:
                 case 1:
-                    element = int(input("Enter the element: "))
-                    my_ll = LinkedList(element)
+                    value = int(input("Enter the value: "))
+                    my_ll = LinkedList(value)
                     print("LinkedList created!")
                 case 2:
                     while True:
-                        element = int(input("Enter the element(-1 for exit): "))
-                        if element != -1:
-                            my_ll.append(element)
+                        value = int(input("Enter the value(-1 for exit): "))
+                        if value != -1:
+                            my_ll.append(value)
                         else:
                             break
                 case 3:
-                    # This is in the practical 4
-                    element = int(input("Enter the element: "))
-                    print(f"Value found at {my_ll.search(element)} node") 
+                    #NOTE: This is in the practical 4
+                    value = int(input("Enter the value: "))
+                    print(f"Value found at {my_ll.search(value)} node")
                 case 4:
                     my_ll.print_list()
                 case 5:

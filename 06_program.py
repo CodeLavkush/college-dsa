@@ -16,9 +16,13 @@ class Stack:
         self.length = 1
 
     def print_stack(self):
+        if self.length == 0:
+            print(self.isEmpty())
+            return None
+        
         temp = self.top
         while temp is not None:
-            print(temp.value)
+            print(temp.value, end="\t")
             temp = temp.next
 
     def push(self, value):
@@ -31,23 +35,31 @@ class Stack:
         self.length += 1
 
     def pop(self):
-        if self.top is None:
+        if self.length == 0:
+            print(self.isEmpty())
             return None
         
         temp = self.top
         self.top = temp.next
         temp.next = None
         self.length -= 1
+        print("Value successfully poped")
 
     def peek(self):
         if self.length == 0:
+            print(self.isEmpty())
             return None
-        
-        return self.top
+        else:
+            return self.top
+    
+    def isEmpty(self):
+        return "Stack is empty"
+
 
 def main():
     while True:
         try:
+            print("\n")
             print("MAIN MENU".center(24, "*"))
             print("1.Create Stack")
             print("2.Push")
@@ -58,20 +70,17 @@ def main():
             choice = int(input("Enter your choice(1-6): "))
             match choice:
                 case 1:
-                    element = int(input("Enter value: "))
-                    my_stack = Stack(element)
+                    value = int(input("Enter the value: "))
+                    my_stack = Stack(value)
                     print("Stack created!")
                 case 2:
-                    while True:
-                        element = int(input("Enter the element(-1 for exit): "))
-                        if element != -1:
-                            my_stack.push(element)
-                        else:
-                            break
+                    value = int(input("Enter the value: "))
+                    my_stack.push(value)
+                    print("Value successfully pushed")
                 case 3: 
                     my_stack.pop()
                 case 4:
-                    print(my_stack.peek().value)
+                    my_stack.peek()
                 case 5:
                     my_stack.print_stack()
                 case 6:

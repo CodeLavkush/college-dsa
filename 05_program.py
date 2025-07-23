@@ -59,20 +59,20 @@ def main():
             print("MAIN MENU".center(24, "*"))
             print("1.Create Double LL")
             print("2.Add value to DLL")
-            print("3.Display LL")
+            print("3.Display")
             print("4.Sort")
             print("5.Exit")
             choice = int(input("Enter your choice(1-5): "))
             match choice:
                 case 1:
-                    element = int(input("Enter value: "))
-                    my_double_LL = DoubleLL(element)
+                    value = int(input("Enter the value: "))
+                    my_double_LL = DoubleLL(value)
                     print("Double LL created!")
                 case 2:
                     while True:
-                        element = int(input("Enter the element(-1 for exit): "))
-                        if element != -1:
-                            my_double_LL.append(element)
+                        value = int(input("Enter the value(-1 for exit): "))
+                        if value != -1:
+                            my_double_LL.append(value)
                         else:
                             break
                 case 3: 
