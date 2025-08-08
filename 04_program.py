@@ -1,7 +1,7 @@
 """
 Practical Details
 Name: Program to search the elements in the linked list and display the same.
-sr no. 3 & 4
+sr no. 4
 Date: 26 June 2025
 """
 

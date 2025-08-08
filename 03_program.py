@@ -2,7 +2,7 @@
 Practical Details
 Name: Program to create a single linked list and display 
 the node elements in reverse order.
-sr no. 3 & 4
+sr no. 3
 Date: 26 June 2025
 """
 

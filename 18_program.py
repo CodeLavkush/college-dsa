@@ -1,6 +1,6 @@
 """
 Practical Details
-Name: Prgram to generate the adjacency matrix.
+Name: Program to generate the adjacency matrix.
 sr no. 18
 Date: 31 July 2025
 """
