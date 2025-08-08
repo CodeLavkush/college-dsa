@@ -1,5 +1,6 @@
 """
 Practical Details
+Name: Program to implement the concept of deque.
 sr no. 9
 Date: 15 July 2025
 """

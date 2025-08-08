@@ -1,5 +1,7 @@
 """
 Practical Details
+Name: Program to create a binary tree and 
+traversing tree using postorder, preorder, inorder.
 sr no. 15
 Date: 25 July 2025
 """

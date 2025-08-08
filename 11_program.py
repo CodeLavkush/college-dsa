@@ -1,5 +1,6 @@
 """
 Practical Details
+Name: Program to implement selection sort.
 sr no. 11
 Date: 17 July 2025
 """

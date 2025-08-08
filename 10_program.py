@@ -1,5 +1,6 @@
 """
 Practical Details
+Name: Program to implement bubble sort.
 sr no. 10
 Date: 17 July 2025
 """

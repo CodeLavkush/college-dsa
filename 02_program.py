@@ -1,5 +1,6 @@
 """
 Practical Details
+Name: Program to merge two arrays and displaying tham in sorted order.
 sr no. 2
 Date: 20 June 2025
 """

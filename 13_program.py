@@ -1,5 +1,6 @@
 """
 Practical Details
+Name: Program to search the element using sequential search.
 sr no. 13
 Date: 24 July 2025
 """

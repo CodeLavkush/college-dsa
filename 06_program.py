@@ -1,5 +1,7 @@
 """
 Practical Details
+Name: Program to implement the concept of stack 
+with push, pop, Display and Exit operations.
 sr no. 6
 Date: 3 July 2025
 """
@@ -80,7 +82,7 @@ def main():
                 case 3: 
                     my_stack.pop()
                 case 4:
-                    my_stack.peek()
+                    print("The topmost element is: ", my_stack.peek().value)
                 case 5:
                     my_stack.print_stack()
                 case 6:

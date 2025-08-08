@@ -1,5 +1,6 @@
 """
 Practical Details
+Name: Program to implement merge sort
 sr no. 14
 Date: 24 July 2025
 """

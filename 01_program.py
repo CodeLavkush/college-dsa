@@ -1,5 +1,7 @@
 """
 Practical Details
+Name: Program to store the elements in 1D Array and perform the operations
+like searching, sorting and reversing the elements.
 sr no. 1
 Date: 19 June 2025
 """

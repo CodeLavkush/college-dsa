@@ -1,5 +1,6 @@
 """
 Practical Details
+Name: Program to implement the concept of circular queue.
 sr no. 8
 Date: 11 July 2025
 """

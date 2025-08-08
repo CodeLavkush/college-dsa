@@ -1,5 +1,7 @@
 """
 Practical Details
+Name: Program to implement the concept of 
+queue with insert, delete, display and exit operations.
 sr no. 7
 Date: 11 July 2025
 """

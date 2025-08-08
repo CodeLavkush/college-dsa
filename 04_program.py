@@ -1,86 +1,81 @@
 """
 Practical Details
-Name: Program to create double linked list and 
-sort the elements in the linked list.
-sr no. 5
-Date: 3 July 2025
+Name: Program to search the elements in the linked list and display the same.
+sr no. 3 & 4
+Date: 26 June 2025
 """
+
 
 class Node:
     def __init__(self, value):
         self.value = value
-        self.prev = None
         self.next = None
 
-class DoubleLL:
+class LinkedList:
     def __init__(self, value):
         new_node = Node(value)
         self.head = new_node
         self.tail = new_node
         self.length = 1
 
-    def print_dll(self):
+    def print_list(self):
         temp = self.head
         while temp is not None:
             print(temp.value)
             temp = temp.next
-
+    
     def append(self, value):
         new_node = Node(value)
-        if self.head is None:
+        if self.length == 0:
             self.head = new_node
             self.tail = new_node
         else:
-            self.tail.next = new_node
-            new_node.prev = self.tail
+            temp = self.tail
             self.tail = new_node
+            temp.next = new_node
         self.length += 1
-
-    def bubble_sort(self):
+        return True
+    
+    def search(self, value):
         if self.head is None:
-            return
-
-        swapped = True
-        while swapped:
-            swapped = False
-            current = self.head
-
-            while current.next:
-                if current.value > current.next.value:
-                    current.value, current.next.value = current.next.value, current.value
-                    swapped = True
-                current = current.next
+            return None
+        
+        index = 0
         temp = self.head
-        while temp.next:
-            temp = temp.next
-        self.tail = temp
+        while temp is not None:
+            if temp.value == value:
+                return index
+            else:
+                temp = temp.next
+            index += 1
 
 def main():
     while True:
         try:
             print("MAIN MENU".center(24, "*"))
-            print("1.Create Double LL")
-            print("2.Add value to DLL")
-            print("3.Display")
-            print("4.Sort")
+            print("1.Create a LL")
+            print("2.Add node to LL")
+            print("3.Search")
+            print("4.Display")
             print("5.Exit")
-            choice = int(input("Enter your choice(1-5): "))
+            choice = int(input("Enter your choice(1-6): "))
             match choice:
                 case 1:
                     value = int(input("Enter the value: "))
-                    my_double_LL = DoubleLL(value)
-                    print("Double LL created!")
+                    my_ll = LinkedList(value)
+                    print("LinkedList created!")
                 case 2:
                     while True:
                         value = int(input("Enter the value(-1 for exit): "))
                         if value != -1:
-                            my_double_LL.append(value)
+                            my_ll.append(value)
                         else:
                             break
-                case 3: 
-                    my_double_LL.print_dll()
+                case 3:
+                    value = int(input("Enter the value: "))
+                    print(f"Value found at {my_ll.search(value)} node")
                 case 4:
-                    my_double_LL.bubble_sort()
+                    my_ll.print_list()
                 case 5:
                     break
         except Exception as error:
