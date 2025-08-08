@@ -3,6 +3,13 @@ Practical Details
 sr no. 13
 Date: 24 July 2025
 """
+
+def sequential_search(my_list, element):
+    for i in range(len(my_list)):
+        if my_list[i] == element:
+            return i
+    return None
+
 def main():
     my_list = []
     while True:
@@ -22,8 +29,11 @@ def main():
                         my_list.append(element)
                 case 2:
                     element = int(input("Enter element to search: "))
-                    searched_value = my_list.index(element)
-                    print(f"The value is at {searched_value}")
+                    index = sequential_search(my_list, element)
+                    if index is not None:
+                        print(f"The value is at {index} index")
+                    else:
+                        print("The value not found.")
                 case 3:
                     for i in my_list:
                         print(i, end="\t")

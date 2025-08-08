@@ -80,6 +80,7 @@ class Queue:
         
         temp = self.first
         if self.length == 1:
+            removed_node = self.first
             self.first = None
             self.last = None
         else:
