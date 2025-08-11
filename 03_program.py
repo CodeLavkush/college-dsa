@@ -58,7 +58,7 @@ def main():
             print("3.Display")
             print("4.Reverse")
             print("5.Exit")
-            choice = int(input("Enter your choice(1-6): "))
+            choice = int(input("Enter your choice(1-5): "))
             match choice:
                 case 1:
                     value = int(input("Enter the value: "))

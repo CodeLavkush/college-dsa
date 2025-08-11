@@ -5,7 +5,7 @@
 3.Search
 4.Display
 5.Exit
-Enter your choice(1-6): 1
+Enter your choice(1-5): 1
 Enter the value: 55
 LinkedList created!
 *******MAIN MENU********
@@ -14,7 +14,7 @@ LinkedList created!
 3.Search
 4.Display
 5.Exit
-Enter your choice(1-6): 2
+Enter your choice(1-5): 2
 Enter the value(-1 for exit): 67
 Enter the value(-1 for exit): 45
 Enter the value(-1 for exit): 23
@@ -26,7 +26,7 @@ Enter the value(-1 for exit): -1
 3.Search
 4.Display
 5.Exit
-Enter your choice(1-6): 4
+Enter your choice(1-5): 4
 55
 67
 45
@@ -38,7 +38,7 @@ Enter your choice(1-6): 4
 3.Search
 4.Display
 5.Exit
-Enter your choice(1-6): 3
+Enter your choice(1-5): 3
 Enter the value: 38
 Value found at 4 node
 *******MAIN MENU********
@@ -47,5 +47,5 @@ Value found at 4 node
 3.Search
 4.Display
 5.Exit
-Enter your choice(1-6): 5
+Enter your choice(1-5): 5
 ```

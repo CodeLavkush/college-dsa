@@ -5,7 +5,7 @@
 3.Display
 4.Reverse
 5.Exit
-Enter your choice(1-6): 1
+Enter your choice(1-5): 1
 Enter the value: 12
 LinkedList created!
 *******MAIN MENU********
@@ -26,7 +26,7 @@ Enter the value(-1 for exit): -1
 3.Display
 4.Reverse
 5.Exit
-Enter your choice(1-6): 3
+Enter your choice(1-5): 3
 12
 4
 18
@@ -38,14 +38,14 @@ Enter your choice(1-6): 3
 3.Display
 4.Reverse
 5.Exit
-Enter your choice(1-6): 4
+Enter your choice(1-5): 4
 *******MAIN MENU********
 1.Create a LL
 2.Add node to LL
 3.Display
 4.Reverse
 5.Exit
-Enter your choice(1-6): 3
+Enter your choice(1-5): 3
 90
 8
 18
@@ -57,5 +57,5 @@ Enter your choice(1-6): 3
 3.Display
 4.Reverse
 5.Exit
-Enter your choice(1-6): 5
+Enter your choice(1-5): 5
 ```
