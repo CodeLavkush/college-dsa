@@ -14,7 +14,7 @@ LinkedList created!
 3.Display
 4.Reverse
 5.Exit
-Enter your choice(1-6): 2
+Enter your choice(1-5): 2
 Enter the value(-1 for exit): 4
 Enter the value(-1 for exit): 18
 Enter the value(-1 for exit): 8
